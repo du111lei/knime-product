@@ -28,6 +28,11 @@
 	</properties>
 
 	<modules>
+		<module>org.knime.product</module>
+		<module>org.knime.product.tests</module>
+		<module>org.knime.product.desktop</module>
+		<module>org.knime.startup.macosx</module>
+		<module>org.knime.update.product</module>
 	</modules>
 
 	<repositories>
