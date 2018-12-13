@@ -19,12 +19,12 @@
 	<properties>
 		<!--
 			Use Jenkins's project parameterization capabilities to set a string 
-			parameter named KNIME_TARGET_PLATFORM_URL to the desired P2 update site value. 
-			For building locally you can set KNIME_TARGET_PLATFORM_URL in the respective 
+			parameter named KNIME_TARGET_PLATFORM_P2 to the desired P2 update site value. 
+			For building locally you can set KNIME_TARGET_PLATFORM_P2 in the respective 
 			run configuration 'Environment' tab with a file:// or http:// URL value pointing 
 			to the desired P2 update site.
 		-->
-		<knime.target.platform.url>${env.KNIME_TARGET_PLATFORM_URL}</knime.target.platform.url>
+		<knime.target.platform.p2>${env.KNIME_TARGET_PLATFORM_P2}</knime.target.platform.p2>
 	</properties>
 
 	<modules>
@@ -39,7 +39,7 @@
 		<repository>
 			<id>org.knime.update.org</id>
 			<layout>p2</layout>
-			<url>${knime.target.platform.url}</url>
+			<url>${knime.target.platform.p2}</url>
 		</repository>
 	</repositories>
 </project>
